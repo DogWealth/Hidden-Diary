@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FaceManageActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="50dp"
+            android:alpha="0"
+            android:text="@string/batch_process_notification_register" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="50dp"
+            android:text="暂时只开放清空用户（删除所有用户）" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:alpha="0"
+            android:onClick="batchRegister"
+            android:text="@string/batch_process_batch_register" />
+        <Button
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="clearFaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除用户"/>
+        <Button
+            android:layout_margin="10dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="clearFaces"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清空用户"
+            />
+        <TextView
+            android:layout_margin="50dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/notification_register_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
